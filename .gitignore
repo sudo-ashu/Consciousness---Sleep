@@ -206,16 +206,20 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-George_ECoG_KTMD_Day1
-George_ECoG_KTMD_Day2
-George_ECoG_SLP_Day1
-George_ECoG_SLP_Day2
+Chibi_ECoG_KTMD_Day1
+Chibi_ECoG_KTMD_Day2
+Chibi_ECoG_SLP_Day1
+Chibi_ECoG_SLP_Day2
 George_ECoG
 Selected_Bins_15_Rec_KTMD_Day1
 Selected_Bins_15_Rec_KTMD_Day2
 Selected_Bins_15_Rec_SLP_Day1
 Selected_Bins_15_Rec_SLP_Day2
 Figures
+KT_George_Day_1
+KT_George_Day_2
+SLP_George_Day_1
+SLP_George_Day_2
 
 .venv
 selected_bins_csv
