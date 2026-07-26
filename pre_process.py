@@ -58,24 +58,24 @@ def pick_random_bins(bins, n=20):
 
 experiment_info = {
     "Session1": {
-        "Awake": [
-            (32.40, 933.47),
-            (1011.04, 2022.56)
+        "Sleep": [
+            (242.64, 2819.22)
         ]
     },
 
     "Session2": {
-        "Anesthetized": [
-            (1417.18, 1869.34)
+        "Sleep": [
+            (0.87, 2669.54)
+        ],
+        "Awake": [
+            (3382.25, 3982.85)
         ]
-        # "Recovery_Closed": [
-        #     (2709.18, 3369.84)
-        # ]
     },
 
     "Session3": {
-        "Recovery_Open": [
-            (717.02, 1317.62)
+        "Awake": [
+            (843.11, 1185.48),
+            (260.29, 749.95)
         ]
     }
 }

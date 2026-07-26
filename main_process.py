@@ -14,7 +14,7 @@ ROI = {
     "LC": [102]
 }
 
-session_folders = ["KT_George_Day_1/Session1", "KT_George_Day_1/Session2"]
+session_folders = ["SLP_George_Day_2/Session1", "SLP_George_Day_2/Session2", "SLP_George_Day_2/Session3"]
 
 region_state_bins = {}
 

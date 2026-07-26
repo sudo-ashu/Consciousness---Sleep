@@ -25,7 +25,7 @@ for region in selected_bins:
 
 
 # Now making 15 recordings per state
-base_folder = "George_Selected_15_Recordings_Day1"
+base_folder = "George_Selected_15_Recordings_SLP_Day2"
 os.makedirs(base_folder, exist_ok=True)
 
 for region in recordings:
