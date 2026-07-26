@@ -105,5 +105,6 @@ def main_function(session_folders, ROI, region):
                 segment = data_filt[:, start_idx:end_idx]
                 bins = make_bins(segment)
                 state_bins[state].extend(bins)
+    return state_bins
 
     state_bins.keys()
