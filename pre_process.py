@@ -58,43 +58,33 @@ def pick_random_bins(bins, n=20):
 
 experiment_info = {
     "Session1": {
-        "Sleep": [
-            (37.94, 2670.57)
+        "Awake": [
+            (32.40, 933.47),
+            (1011.04, 2022.56)
         ]
     },
 
     "Session2": {
-        "Sleep": [
-            (9.24, 1550.78)
-        ],
-
-        "Awake": [
-            (1600.13, 2048.28)
+        "Anesthetized": [
+            (1417.18, 1869.34)
         ]
+        # "Recovery_Closed": [
+        #     (2709.18, 3369.84)
+        # ]
     },
 
     "Session3": {
-        "Awake": [
-            (0.83, 658.49)
+        "Recovery_Open": [
+            (717.02, 1317.62)
         ]
     }
 }
 
-Regions = {
-    "MP": [52],
-    "LP": [25],
-    "PM": [39],
-    "MS": [30],
-    "PC": [11],
-    "TC": [94],
-    "HV": [85],
-    "LC": [102]
-}
-
-def main_function(session_folders):
+def main_function(session_folders, ROI, region):
     state_bins = {}
     # works on the meta data
-    
+    selected_idx = [ch - 1 for ch in ROI[region]] #just converting it to 0-based idexing
+
     for folder in session_folders:
         session_name = os.path.basename(folder)
         print(session_name)
@@ -102,11 +92,11 @@ def main_function(session_folders):
         raw = load_session(folder)
         data_ds, data_ref, data_filt = preprocess(raw)
 
+        data_filt = data_filt[selected_idx, :]
         session_info = experiment_info[session_name]
 
         for state, intervals in session_info.items():
-            if state not in state_bins:
-                state_bins[state] = []
+            state_bins.setdefault(state, [])
 
             for start_time, end_time in intervals:
                 start_idx = int(start_time * fs_new)
@@ -117,7 +107,3 @@ def main_function(session_folders):
                 state_bins[state].extend(bins)
 
     state_bins.keys()
-
-session_folders = ["KT_George_Day_1/Session1", "KT_George_Day_1/Session2", "KT_George_Day_1/Session3"]
-state_bins = main_function(session_folders)
-
