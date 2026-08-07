@@ -4,17 +4,17 @@ from pre_process import main_function
 # Region Of Interest
 ROI = {
     "WB": list(range(1,129)),
-    "MP": [52],
-    "LP": [25],
-    "PM": [39],
-    "MS": [30],
-    "PC": [11],
-    "TC": [94],
-    "HV": [85],
-    "LC": [102]
+    "MP": [52, 57, 60, 63],
+    "LP": [14, 25, 37, 46, 48],
+    "PM": [5, 6, 39, 50],
+    "MS": [18, 41, 42, 30],
+    "PC": [1, 2, 10, 11, 21, 32],
+    "TC": [67, 68, 80, 92, 93, 94],
+    "HV": [13, 72, 73, 84, 85, 98],
+    "LC": [88, 89, 101, 102, 112, 113]
 }
 
-session_folders = ["SLP_George_Day_2/Session1", "SLP_George_Day_2/Session2", "SLP_George_Day_2/Session3"]
+session_folders = ["KT_George_Day_2/Session1", "KT_George_Day_2/Session2", "KT_George_Day_2/Session3"]
 
 region_state_bins = {}
 
