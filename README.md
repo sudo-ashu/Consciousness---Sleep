@@ -77,7 +77,6 @@ Each exported recording represents 20 seconds of ECoG data, assembled from ten r
 pip install numpy scipy pandas matplotlib
 ```
 
-`matplotlib` is imported by the preprocessing module but is not used in the current workflow.
 
 ## Project files
 
