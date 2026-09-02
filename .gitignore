@@ -220,10 +220,18 @@ KT_George_Day_1
 KT_George_Day_2
 SLP_George_Day_1
 SLP_George_Day_2
+KT_Chibi_Day1
+KT_Chibi_Day2
+SLP_Chibi_Day1
+SLP_Chibi_Day2
 George_Selected_15_Recordings_Anes_Day1
 George_Selected_15_Recordings_Anes_Day2
 George_Selected_15_Recordings_SLP_Day1
 George_Selected_15_Recordings_SLP_Day2
+Chibi_KT_Rec_Day1
+Chibi_KT_Rec_Day2
+Chibi_SLP_Rec_Day1
+Chibi_SLP_Rec_Day2
 
 .venv
 selected_bins_csv
