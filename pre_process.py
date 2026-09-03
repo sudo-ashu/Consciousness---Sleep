@@ -60,7 +60,6 @@ experiment_info = {
     "Session1": {
         "Sleep": [
             (158.99, 2925.32)
-            # (1701.27, 2596.93)
         ]
     },
 
@@ -73,12 +72,12 @@ experiment_info = {
         # ]
     },
 
-    "Session3": {
-        "Awake": [
-            (1324.76, 1699.73),
-            (850.88, 1285.15)
-        ]
-    }
+    # "Session3": {
+    #     "Awake": [
+    #         (1324.76, 1699.73),
+    #         (850.88, 1285.15)
+    #     ]
+    # }
 }
 
 def main_function(session_folders, ROI, region):
